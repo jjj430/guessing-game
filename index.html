@@ -9,7 +9,9 @@
 	  <script>
 	    var userName = prompt("Hello, May I have your name");
 		alert("Nice to meet you " + userName);
+		console.log("UserName: " + userName);
 		var answerLearn = prompt("Did I learn from Treehouse.com? yes or no");
+		console.log("Learn from Treehouse: " + answerLearn);
 		if (answerLearn == "yes"){
 		   alert(userName + " you are correct. I did learn from Treehouse");
 		}
@@ -17,6 +19,7 @@
 		  alert("Sorry " + userName + " incorrect. I did learn from Treehouse");
 		}
 		var answerUniversity = prompt("Did I go to Stanford Univeristy? yes or no");
+		console.log("Attended Stanford? " + answerUniversity);
 		if (answerUniversity == "no"){
 		  alert(userName + " you are correct I did not attended Stanford");
 		}
