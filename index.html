@@ -1,0 +1,53 @@
+<!DOCTPYE ht
+<html>
+  <head>
+    <title> Guessing Game </title>
+  </head>
+    <body>
+	  <h1>Guessing Game</h1>
+	  <h3>Welcome to the Guessing Game</h3>
+	  <script>
+	    var userName = prompt("Hello, May I have your name");
+		alert("Thank you " + userName);
+		var answer1 = prompt("Did I learn from Treehouse.com? yes or no");
+		if (answer1 == "yes"){
+		   alert(userName + " you are correct. I did learn from Treehouse");
+		}
+		else {
+		  alert("Sorry " + userName + " incorrect");
+		}
+		var answer2 = prompt("Did I go to Stanford Univeristy? yes or no");
+		if (answer2 == "no"){
+		  alert(userName + " you are correct");
+		}
+		else {
+		  alert("Sorry " + userName + " incorrect");
+		}
+		var answer3 = prompt("Do I want to develop children's software? yes or no");
+		if (answer3 == "no"){
+		  alert(userName + " correct");
+		}
+		else {
+		  alert("Sorry " + userName + " not correct");
+		}
+		var answer4 = prompt(userName + " would you like to play a number guessing game? yes or no");
+		if (answer4 == "yes"){
+		  var guess = prompt(userName + " guess a number between 1 and 20");
+		  var answer = 8;
+		  if (guess == answer){
+		    alert(userName + "Good job, you guessed it");
+		  }
+		  else if (guess < answer){
+		    alert("Sorry too low");
+		  }
+		  else {
+		    alert("Sorry too high");
+		  }
+		}
+		else {
+		  alert("Maybe next time");
+		}
+	  </script>
+	</body>
+</html>
+
