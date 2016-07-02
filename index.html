@@ -27,6 +27,7 @@
 		  alert("Sorry " + userName + " incorrect. I did not attend Stanford");
 		}
 		var answerDevelop = prompt("Do I want to develop children's software? yes or no");
+		console.log("Develop Children's software? " + answerDevelop);
 		if (answerDevelop == "no"){
 		  alert(userName + " correct. I want to develop mobile apps, not children's software");
 		}
@@ -36,9 +37,10 @@
 		var answerPlay = prompt(userName + " would you like to play a number guessing game? yes or no");
 		if (answerPlay == "yes"){
 		  var guess = prompt(userName + " guess a number between 1 and 20");
+		  console.log(guess);
 		  var answer = 8;
 		  if (guess == answer){
-		    alert(userName + "Good job, you guessed it");
+		    alert(userName + " Good job, you guessed it");
 		  }
 		  else if (guess < answer){
 		    alert("Sorry too low.");
