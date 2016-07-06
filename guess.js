@@ -1,4 +1,4 @@
-        /*
+        
 		var userName = prompt("Hello, May I have your name");
 		alert("Nice to meet you " + userName);
 		console.log("UserName: " + userName);
@@ -33,8 +33,8 @@
 		else {
 		  alert("Sorry " + userName + " not correct. I want to develop mobile apps");
 		}
-		document.write("You answered " + numberCorr + " questions correctly.");
-		*/
+		alert("You answered " + numberCorr + " questions correctly.");
+		
 		
 			
 		var answerPlay = prompt( "Would you like to play a number guessing game? yes or no");
