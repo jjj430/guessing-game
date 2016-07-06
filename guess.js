@@ -1,4 +1,5 @@
-var userName = prompt("Hello, May I have your name");
+        /*
+		var userName = prompt("Hello, May I have your name");
 		alert("Nice to meet you " + userName);
 		console.log("UserName: " + userName);
 		
@@ -33,22 +34,34 @@ var userName = prompt("Hello, May I have your name");
 		  alert("Sorry " + userName + " not correct. I want to develop mobile apps");
 		}
 		document.write("You answered " + numberCorr + " questions correctly.");
+		*/
 		
-		var answerPlay = prompt(userName + " would you like to play a number guessing game? yes or no");
-		if (answerPlay.toLowerCase == "yes"){
-		  var guess = prompt(userName + " guess a number between 1 and 20");
-		  console.log(guess);
-		  var answer = 8;
-		  if (guess.toLowerCase == answer){
-		    alert(userName + " Good job, you guessed it");
-		  }
-		  else if (guess < answer){
-		    alert("Sorry too low.");
-		  }
-		  else {
-		    alert("Sorry too high.");
-		  }
+			
+		var answerPlay = prompt( "Would you like to play a number guessing game? yes or no");
+		
+		var numberGuesses = 0;
+		if (answerPlay.toLowerCase() == "yes" || answerPlay.toLowerCase() == "y"){
+		 while (answerPlay.toLowerCase() == "yes" || answerPlay.toLowerCase() == "y"){
+		    var guess = prompt("Guess a number between 1 and 20");
+		  //console.log(guess);
+		    numberGuesses++;
+		    var answer = 8;
+		    if (guess == answer){
+		      alert("Good job, you guessed it");
+			  answerPlay = "No";
+		    }
+		    else if (guess < answer){
+		      alert("Sorry too low.");
+			  answerPlay = prompt("Do you want to keep guessing? yes or no");
+		    }
+		    else {
+		      alert("Sorry too high.");
+			//guess = prompt("Do you want to play again? yes or no");
+			  answerPlay = prompt("Do you want to keep guessing? yes or no");
+		    }
+		 }
 		}
+		 //alert("You guess it in " + numberGuesses + " guesses.");
 		else {
-		  alert("Maybe next time we can play");
+		 alert("Maybe next time we can play");
 		}
