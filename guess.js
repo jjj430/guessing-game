@@ -60,8 +60,9 @@
 			  answerPlay = prompt("Do you want to keep guessing? yes or no");
 		    }
 		 }
+		 alert("You guess it in " + numberGuesses + " guesses.");
 		}
-		 //alert("You guess it in " + numberGuesses + " guesses.");
+		 
 		else {
 		 alert("Maybe next time we can play");
 		}
