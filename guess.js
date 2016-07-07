@@ -1,4 +1,54 @@
-		var userName = prompt("Hello, May I have your name");
+	/*function getName(){
+		  var userName = prompt("Hello, May I have your name");
+		  document.write("Nice to meet you " + userName);
+		  return userName;  
+	  }  
+	 
+	var userName = getName();
+    */
+var counter =0;
+
+	function askQuestion(question, questionNum){
+		var response = prompt(question);
+		var answer=["yes", "no", "no"];
+		if (response.toLowerCase() == answer[questionNum]){
+			document.write("<p>Your answer is correct </p>");
+			counter++;
+		}
+		else {
+			document.write("<p>Your answer is incorrect </p>");
+		}
+		
+	}
+	
+	askQuestion("Did I learn from Treehouse.com? yes or no", 0);
+	askQuestion("Did I go to Stanford Univeristy? yes or no", 1);
+	askQuestion("Do I want to develop children's software? yes or no", 2);
+	console.log(counter);
+	
+	
+	
+		
+		
+		/* var userName = null;
+		getUserName();
+		document.write(userName);
+		
+		function getUserName() {
+			var userName = "";
+			while((userName.trim() == "") && (userName != null)) {
+				userName = prompt("What is your name", "");
+			}
+			if (userName != null) {
+				return  UserName;
+			}
+			else {
+				return "";
+			}
+		}
+		*/
+		
+		/* var userName = prompt("Hello, May I have your name");
 		alert("Nice to meet you " + userName);
 		// console.log("UserName: " + userName);
 		var numberCorr = 0;
@@ -59,4 +109,4 @@
 		 
 		else {
 		 alert("Maybe next time we can play");
-		}
+		}  */
