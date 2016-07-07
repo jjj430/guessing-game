@@ -1,8 +1,6 @@
-        
 		var userName = prompt("Hello, May I have your name");
 		alert("Nice to meet you " + userName);
-		console.log("UserName: " + userName);
-		
+		// console.log("UserName: " + userName);
 		var numberCorr = 0;
 		var answerLearn = prompt("Did I learn from Treehouse.com? yes or no");
 		console.log("Learn from Treehouse: " + answerLearn);
@@ -15,7 +13,7 @@
 		}
 		
 		var answerUniversity = prompt("Did I go to Stanford Univeristy? yes or no");
-		console.log("Attended Stanford? " + answerUniversity);
+		// console.log("Attended Stanford? " + answerUniversity);
 		if (answerUniversity.toLowerCase() == "no" || answerUniversity.toLowerCase() == "n"){
 		  alert(userName + " you are correct I did not attended Stanford");
 		  numberCorr++;
@@ -25,7 +23,7 @@
 		}
 		
 		var answerDevelop = prompt("Do I want to develop children's software? yes or no");
-		console.log("Develop Children's software? " + answerDevelop);
+		// console.log("Develop Children's software? " + answerDevelop);
 		if (answerDevelop.toLowerCase() == "no" || answerDevelop.toLowerCase() == "n"){
 		  alert(userName + " correct. I want to develop mobile apps, not children's software");
 		  numberCorr++;
@@ -34,11 +32,7 @@
 		  alert("Sorry " + userName + " not correct. I want to develop mobile apps");
 		}
 		alert("You answered " + numberCorr + " questions correctly.");
-		
-		
-			
 		var answerPlay = prompt( "Would you like to play a number guessing game? yes or no");
-		
 		var numberGuesses = 0;
 		if (answerPlay.toLowerCase() == "yes" || answerPlay.toLowerCase() == "y"){
 		 while (answerPlay.toLowerCase() == "yes" || answerPlay.toLowerCase() == "y"){
