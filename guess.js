@@ -30,18 +30,21 @@
 	*/
 	
 	var countGuess = 0;
+	var guess = 0;
 	function numberGame() {
+	 do { 
 	  var guess = prompt("What number, between 1 and 20, am I thinking of? ");
       var correctNumber = 11;
 	  if (guess == correctNumber){
-		  document.write("You are correct");
+		  document.write("<p>You are correct</p>");
 	  }
 	  else if (correctNumber < guess) {
-		  document.write("Too High, try again");
+		  document.write("<p>Too High, try again</p>");
 	  }	
 	  else {
-		  document.write("Too Low, try again");
+		  document.write("<p>Too Low, try again</p>");
 	  }
+	 } while (guess !=correctNumber);
 	}
 		
 	numberGame();
