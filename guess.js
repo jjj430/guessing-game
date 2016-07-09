@@ -6,7 +6,9 @@
 	 
 	var userName = getName();
     */
-var counter =0;
+    
+	/*
+	var counter =0;
 
 	function askQuestion(question, questionNum){
 		var response = prompt(question);
@@ -25,11 +27,25 @@ var counter =0;
 	askQuestion("Did I go to Stanford Univeristy? yes or no", 1);
 	askQuestion("Do I want to develop children's software? yes or no", 2);
 	console.log(counter);
+	*/
 	
-	
-	
+	var countGuess = 0;
+	function numberGame() {
+	  var guess = prompt("What number, between 1 and 20, am I thinking of? ");
+      var correctNumber = 11;
+	  if (guess == correctNumber){
+		  document.write("You are correct");
+	  }
+	  else if (correctNumber < guess) {
+		  document.write("Too High, try again");
+	  }	
+	  else {
+		  document.write("Too Low, try again");
+	  }
+	}
 		
-		
+	numberGame();
+	  
 		/* var userName = null;
 		getUserName();
 		document.write(userName);
@@ -82,6 +98,8 @@ var counter =0;
 		  alert("Sorry " + userName + " not correct. I want to develop mobile apps");
 		}
 		alert("You answered " + numberCorr + " questions correctly.");
+		
+		
 		var answerPlay = prompt( "Would you like to play a number guessing game? yes or no");
 		var numberGuesses = 0;
 		if (answerPlay.toLowerCase() == "yes" || answerPlay.toLowerCase() == "y"){
