@@ -1,15 +1,23 @@
-body {
-	font-family: arial;
-	background-color: #ADD8E6;
+h1 {
+
+  font-family: Optima, Helvetica, sans-serif;
 }
 
-
-p.biography {
+body {
+  background-color: #ADD8E6;
+}
+.biography {
 	background-color: red;
 }
-p.education {
+.education {
 	background-color: white;
 }
-p.goal {
-	background-color:blue;
+.goal {
+	background-color: blue;
+}
+.bio {
+	border: 5px solid #ffffff;
+}
+.game {
+	border:  5px solid #ffffff;
 }

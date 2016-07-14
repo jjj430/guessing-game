@@ -32,16 +32,21 @@
 	var countGuess = 0;
 	var guess = 0;
 	var answerPlay = "yes";
+	var numberGuess = 0;
 	function numberGame() {
 	  var answerPlay = prompt( "Would you like to play a number guessing game? yes or no");
+	  
 	  while((answerPlay == "yes") || (answerPlay == "y")) {
 	  var guess = prompt("What number, between 1 and 20, am I thinking of? ");
+	  numberGuess++;
       var correctNumber = 11;
 	  if (guess == correctNumber){   // if guess correct 
 		  //document.write("<p>You are correct</p>");
             var answer = document.getElementById("ans");
 			answer.innerHTML = "Yah, you are correct. Good job.";
-			console.log("guess is " + guess);
+			// console.log("guess is " + guess);
+			var numGuess = document.getElementById("numberOfGuess");
+			numGuess.innerHTML = "You guessed it in " + numberGuess + " tries";
 			answerPlay = "no";
 		  
 	  }
