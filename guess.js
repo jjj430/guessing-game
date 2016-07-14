@@ -1,24 +1,28 @@
-	/*function getName(){
+	function getName(){
 		  var userName = prompt("Hello, May I have your name");
-		  document.write("Nice to meet you " + userName);
+		  var greet = document.getElementById("greeting");
+			greet.innerHTML = "Nice to meet you " + userName;
+		  //document.write("Nice to meet you " + userName);
 		  return userName;  
 	  }  
 	 
 	var userName = getName();
-    */
     
-	/*
 	var counter =0;
 
 	function askQuestion(question, questionNum){
 		var response = prompt(question);
 		var answer=["yes", "no", "no"];
 		if (response.toLowerCase() == answer[questionNum]){
-			document.write("<p>Your answer is correct </p>");
+			// document.write("<p>Your answer is correct </p>");
+			var greet = document.getElementById("greeting");
+			greet.innerHTML = "Your answer is correct.";
 			counter++;
 		}
 		else {
-			document.write("<p>Your answer is incorrect </p>");
+			// document.write("<p>Your answer is incorrect </p>");
+			var greet = document.getElementById("greeting");
+			greet.innerHTML = "Your answer is incorrect";
 		}
 		
 	}
@@ -27,7 +31,9 @@
 	askQuestion("Did I go to Stanford Univeristy? yes or no", 1);
 	askQuestion("Do I want to develop children's software? yes or no", 2);
 	console.log(counter);
-	*/
+	var count = document.getElementById("greeting");
+	count.innerHTML = "You got " + counter + " correct.";
+	
 	
 	var countGuess = 0;
 	var guess = 0;
@@ -46,7 +52,7 @@
 			answer.innerHTML = "Yah, you are correct. Good job.";
 			// console.log("guess is " + guess);
 			var numGuess = document.getElementById("numberOfGuess");
-			numGuess.innerHTML = "You guessed it in " + numberGuess + " tries";
+			numGuess.innerHTML = "You guessed it in " + numberGuess + " tries.";
 			answerPlay = "no";
 		  
 	  }
