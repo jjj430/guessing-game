@@ -1,0 +1,15 @@
+body {
+	font-family: arial;
+	background-color: #ADD8E6;
+}
+
+
+p.biography {
+	background-color: red;
+}
+p.education {
+	background-color: white;
+}
+p.goal {
+	background-color:blue;
+}

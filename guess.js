@@ -31,20 +31,36 @@
 	
 	var countGuess = 0;
 	var guess = 0;
+	var answerPlay = "yes";
 	function numberGame() {
-	 do { 
+	  var answerPlay = prompt( "Would you like to play a number guessing game? yes or no");
+	  while((answerPlay == "yes") || (answerPlay == "y")) {
 	  var guess = prompt("What number, between 1 and 20, am I thinking of? ");
       var correctNumber = 11;
-	  if (guess == correctNumber){
-		  document.write("<p>You are correct</p>");
+	  if (guess == correctNumber){   // if guess correct 
+		  //document.write("<p>You are correct</p>");
+            var answer = document.getElementById("ans");
+			answer.innerHTML = "Yah, you are correct. Good job.";
+			console.log("guess is " + guess);
+			answerPlay = "no";
+		  
 	  }
-	  else if (correctNumber < guess) {
-		  document.write("<p>Too High, try again</p>");
-	  }	
-	  else {
-		  document.write("<p>Too Low, try again</p>");
+	  else if (correctNumber < guess) {  // if guess is too high
+		  //document.write("<p>Too High, try again</p>");
+		  var answer = document.getElementById("ans");
+			answer.innerHTML = "Sorry you are incorrect. Your answer is too high";
+		  var answerPlay = prompt("Do you want to you want to keep playing? yes or no ");
+		  
+		  }
+	  
+	  else {     // if guess is too low
+		  // document.write("<p>Too Low, try again</p>");
+		  var answer = document.getElementById("ans");
+			answer.innerHTML = "Sorry you are incorrect. Your answer is too low \n";
+          var answerPlay = prompt("Do you want to keep playing? yes or no");
+		   
 	  }
-	 } while (guess !=correctNumber);
+	 }
 	}
 		
 	numberGame();
