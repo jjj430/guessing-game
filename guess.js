@@ -1,4 +1,4 @@
-	function getName(){
+/*	function getName(){
 		  var userName = prompt("Hello, May I have your name");
 		  var greet = document.getElementById("greeting");
 			greet.innerHTML = "Nice to meet you " + userName;
@@ -7,6 +7,7 @@
 	  }  
 	 
 	var userName = getName();
+*/
     
 	var counter =0;
 
@@ -15,14 +16,16 @@
 		var answer=["yes", "no", "no"];
 		if (response.toLowerCase() == answer[questionNum]){
 			// document.write("<p>Your answer is correct </p>");
-			var greet = document.getElementById("greeting");
-			greet.innerHTML = "Your answer is correct.";
+			var correct = document.getElementById("answer");
+			correct.style.backgroundColor="green";
+			correct.innerHTML = "Your answer is correct.";
 			counter++;
 		}
 		else {
 			// document.write("<p>Your answer is incorrect </p>");
-			var greet = document.getElementById("greeting");
-			greet.innerHTML = "Your answer is incorrect";
+			var incorrect = document.getElementById("answer");
+			incorrect.style.backgroundColor="red";
+			incorrect.innerHTML = "Your answer is incorrect";
 		}
 		
 	}
@@ -30,10 +33,12 @@
 	askQuestion("Did I learn from Treehouse.com? yes or no", 0);
 	askQuestion("Did I go to Stanford Univeristy? yes or no", 1);
 	askQuestion("Do I want to develop children's software? yes or no", 2);
-	console.log(counter);
-	var count = document.getElementById("greeting");
+
+	var count = document.getElementById("sumOfCorrect");
+	count.style.backgroundColor="pink";
 	count.innerHTML = "You got " + counter + " correct.";
 	
+
 	
 	var countGuess = 0;
 	var guess = 0;
